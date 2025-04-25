@@ -83,7 +83,8 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>U.S. House of Representatives Travel Tracker</h1>
+        <h1>Where's the money Lebowski?</h1>
+        <h2>U.S. House of Representatives Tracker</h2>
         <p>Explore travel reports and member information</p>
       </header>
       
