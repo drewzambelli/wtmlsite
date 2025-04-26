@@ -1,8 +1,7 @@
 // index.js - Main entry point
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Routes, Route } from 'react-router-dom'; // Change to HashRouter
-
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import MemberDetail from './MemberDetail';
@@ -24,10 +23,14 @@ root.render(
 
 
 
+
+
+
 // // index.js - Main entry point
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { HashRouter, Routes, Route } from 'react-router-dom'; // Change to HashRouter
+
 // import './index.css';
 // import App from './App';
 // import MemberDetail from './MemberDetail';
@@ -35,11 +38,14 @@ root.render(
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
-//     <BrowserRouter basename={process.env.PUBLIC_URL}>
+//     <HashRouter>
 //       <Routes>
 //         <Route path="/" element={<App />} />
 //         <Route path="/member/:id" element={<MemberDetail />} />
 //       </Routes>
-//     </BrowserRouter>
+//     </HashRouter>
 //   </React.StrictMode>
 // );
+
+
+

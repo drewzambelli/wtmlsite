@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 // Initialize Supabase client - you'll need to replace these with your actual Supabase URL and anon key
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
@@ -105,10 +106,10 @@ function App() {
         ) : (
           <div className="members-grid">
             {filteredMembers.map((member) => (
-              <a 
-                href={`/member/${member.internal_unique_id}`} 
-                key={member.internal_unique_id}
-                className="member-card"
+              <Link 
+              to={`/member/${member.internal_unique_id}`} 
+              key={member.internal_unique_id}
+              className="member-card"
               >
                 <div className="member-image">
                   <img 
@@ -121,7 +122,7 @@ function App() {
                   <h3>{member.member_full_name}</h3>
                   <p>{member.member_state}{member.member_district ? ` - District ${member.member_district}` : ''}</p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         )}
