@@ -6,8 +6,7 @@ import './App.css';
 // Initialize Supabase client - you'll need to replace these with your actual Supabase URL and anon key
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabaseKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
-console.log('HERE', supabaseUrl)
-console.log('here2:', supabaseKey)
+
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 function App() {
@@ -130,7 +129,7 @@ function App() {
       
       <footer className="footer">
         <p>Data sourced from official House of Representatives travel reports</p>
-        <p>Last updated: <span id="last-updated"></span></p>
+        <p>Last updated: 4/25/25<span id="last-updated"></span></p>
       </footer>
     </div>
   );
