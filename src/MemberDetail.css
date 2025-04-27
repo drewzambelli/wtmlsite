@@ -1,0 +1,119 @@
+/* MemberDetail.css - Styling for Member Biographical Page */
+
+.member-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.member-detail-header {
+  margin-bottom: 30px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: #003d7a;
+  text-decoration: underline;
+}
+
+.member-profile {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.member-header {
+  display: flex;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .member-header {
+    flex-direction: column;
+  }
+}
+
+.member-headshot {
+  flex: 0 0 200px;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .member-headshot {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.member-headshot img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-bio {
+  flex: 1;
+}
+
+.member-bio h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 32px;
+}
+
+.member-info-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.info-value {
+  color: #333;
+}
+
+.info-value a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.info-value a:hover {
+  text-decoration: underline;
+}
+
+.loading, .error, .not-found {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.error, .not-found {
+  color: #d32f2f;
+}
+
+.member-detail-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  font-size: 14px;
+}

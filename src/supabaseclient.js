@@ -41,6 +41,21 @@ export async function fetchMemberTravelReports(internalUniqueId) {
   return data;
 }
 
+// Fetch staff members for a specific member
+export async function fetchMemberStaff(internalUniqueId) {
+  const { data, error } = await supabase
+    .from('member_staff')
+    .select('*')
+    .eq('member_id', internalUniqueId)
+    .order('year', { ascending: false });
+  
+  if (error) {
+    console.error("Error in fetchMemberStaff:", error);
+    throw error;
+  }
+  return data;
+}
+
 // Search members by name, state, or district
 export async function searchMembers(searchTerm) {
   if (!searchTerm.trim()) {
